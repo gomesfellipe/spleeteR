@@ -26,7 +26,7 @@ reticulate::py_install(c("spleeter"), forge = TRUE)
 Then install the package for R from Github:
 
 ```r
-remotes::install_github("gomesfellipe/spleeter")
+remotes::install_github("gomesfellipe/spleeteR")
 ```
 
 To use the package, just run the function bellow where `<audio_file>` is the name of the *.mp3* file and `n_stem` is the flavour of separation:
