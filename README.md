@@ -29,9 +29,7 @@ Then install the package for R from Github:
 remotes::install_github("gomesfellipe/spleeter")
 ```
 
-> :warning: Note that we no longer recommend using `conda` for installing spleeter.
-
-To use the package, just run the function where `<audiopath>` is the path to the *.mp3*  file and `n_steam` is the flavour of separation:
+To use the package, just run the function bellow where `<audiopath>` is the path to the *.mp3*  file and `n_steam` is the flavour of separation:
 
 ```r
 spleeteR::separator(audio_path = "<audio_path>", n_steam = 2)
@@ -39,7 +37,9 @@ spleeteR::separator(audio_path = "<audio_path>", n_steam = 2)
 
 You should get two separated audio files (`vocals.wav` and `accompaniment.wav`) in the `output/<audio_path>` folder.
 
-For a detailed documentation, please check the [repository wiki](https://github.com/deezer/spleeter/wiki/1.-Installation)
+> :warning: For now this is the only function of the package. Feel free to add new features.
+
+For a detailed documentation of Python package, check the [repository wiki](https://github.com/deezer/spleeter/wiki/1.-Installation)
 
 ## Reference
 

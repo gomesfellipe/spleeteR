@@ -16,7 +16,7 @@ separator <- function(audio_path = NULL,
   }
 
   if(is.null(audio_path)){
-    stop("Insert audio audio_path!")
+    stop("Insert audio_path!")
     }
 
   if(!n_steam %in% c(2, 4, 5)){
@@ -25,7 +25,7 @@ separator <- function(audio_path = NULL,
 
   spleeter <- reticulate::import("spleeter.separator")
 
-  steam <- paste0("spleeter:", n_steam, "stems")
+  steam <- paste0("spleeter:", n_steam, "stems-16kHz")
 
   separator <- spleeter$Separator(steam)
 
