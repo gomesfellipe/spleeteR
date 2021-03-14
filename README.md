@@ -74,3 +74,8 @@ The code of **Spleeter** is [MIT-licensed](LICENSE).
 
 Consult [currently open issues](https://github.com/deezer/spleeter/issues) for Troubleshooting 
 
+## Next steps for R package
+
+- Wrapper of more functions from the original library
+- All possible parameters for the separator function
+- Create a shiny to make the tool friendly to non-programmers
