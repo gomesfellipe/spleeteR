@@ -1,12 +1,13 @@
 Package: spleeteR
 Type: Package
-Title: Wapper to python deezer/spleeter
+Title: Wapper to deezer/spleeter written in Python
 Version: 0.1.0
-Author: Fellipe Gomes
-Maintainer: Fellipe Gomes <gomes.fellipe1@gmail.com>
-Description: A simple wrapper to deezer/spleeter python lib to separate instruments from a song using pre-trained artificial intelligence models
+Authors@R: person("Fellipe", "Gomes", email = "gomes.fellipe1@gmail.com",
+  role = c("aut", "cre"))
+Description: A simple wrapper to deezer/spleeter lib to separate instruments from a song using state of the art model written in Python and uses Tensorflow.
 Encoding: UTF-8
 LazyData: true
 Imports: 
   reticulate
 License: MIT + file LICENSE
+RoxygenNote: 7.1.1
