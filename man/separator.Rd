@@ -4,10 +4,10 @@
 \alias{separator}
 \title{Separates a clip into stems (vocals, bass, drums, others)}
 \usage{
-separator(audio_path = NULL, n_stem = 2)
+separator(audio_file = NULL, n_stem = 2)
 }
 \arguments{
-\item{audio_path}{The file path where the music are located.}
+\item{audio_file}{The audio file.}
 
 \item{n_stem}{A number [2, 4 and 5] to indicates a flavour of separation, where:
 \itemize{
@@ -24,7 +24,7 @@ Separates a clip into stems (vocals, bass, drums, others)
 }
 \examples{
 \dontrun{
-library(spleeteR)
-separator(audio_path = 'path_to_music/music.mp3', n_stem = 5)
+setwd("path_to_music")
+spleeteR::separator(audio_file = 'music.mp3', n_stem = 5)
 }
 }

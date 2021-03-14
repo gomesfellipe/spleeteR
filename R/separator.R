@@ -1,6 +1,6 @@
 #' Separates a clip into stems (vocals, bass, drums, others)
 #'
-#' @param audio_path The file path where the music are located.
+#' @param audio_file The audio file.
 #' @param n_stem A number [2, 4 and 5] to indicates a flavour of separation, where:
 #' \itemize{
 #'   \item{2: Vocals (singing voice) / accompaniment separation}
@@ -10,10 +10,10 @@
 #' @return Creates a directory with files in .wav format
 #' @examples
 #' \dontrun{
-#' library(spleeteR)
-#' separator(audio_path = 'path_to_music/music.mp3', n_stem = 5)
+#' setwd("path_to_music")
+#' spleeteR::separator(audio_file = 'music.mp3', n_stem = 5)
 #' }
-separator <- function(audio_path = NULL,
+separator <- function(audio_file = NULL,
                       n_stem = 2) {
 
   if (!requireNamespace("reticulate", quietly = TRUE)) {
@@ -21,8 +21,8 @@ separator <- function(audio_path = NULL,
          call. = FALSE)
   }
 
-  if(is.null(audio_path)){
-    stop("Insert audio_path!")
+  if(is.null(audio_file)){
+    stop("Insert audio_file!")
     }
 
   if(!n_stem %in% c(2, 4, 5)){
@@ -38,7 +38,7 @@ separator <- function(audio_path = NULL,
   unlink("output")
   dir.create("output", showWarnings = FALSE)
 
-  separator$separate_to_file(audio_descriptor = audio_path,
+  separator$separate_to_file(audio_descriptor = audio_file,
                              destination = "output"
                              # bitrate=paste0(320, "kB/s")# [128, 320]
   )
