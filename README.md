@@ -29,13 +29,13 @@ Then install the package for R from Github:
 remotes::install_github("gomesfellipe/spleeter")
 ```
 
-To use the package, just run the function bellow where `<audiopath>` is the path to the *.mp3*  file and `n_steam` is the flavour of separation:
+To use the package, just run the function bellow where `<audio_file>` is the name of the *.mp3* file and `n_stem` is the flavour of separation:
 
 ```r
-spleeteR::separator(audio_path = "<audio_path>", n_steam = 2)
+spleeteR::separator(audio_path = "<audio_file>", n_stem = 2)
 ```
 
-You should get two separated audio files (`vocals.wav` and `accompaniment.wav`) in the `output/<audio_path>` folder.
+You should get two separated audio files (`vocals.wav` and `accompaniment.wav`) in the `output/<audio_file>` folder.
 
 > :warning: For now this is the only function of the package. Feel free to add new features.
 
