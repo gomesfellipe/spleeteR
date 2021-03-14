@@ -76,6 +76,4 @@ Consult [currently open issues](https://github.com/deezer/spleeter/issues) for T
 
 ## Next steps for R package
 
-- Wrapper of more functions from the original library
-- All possible parameters for the separator function
-- Create a shiny to make the tool friendly to non-programmers
+See [Projects](https://github.com/gomesfellipe/spleeteR/projects)
